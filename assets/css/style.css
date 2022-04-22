@@ -1,8 +1,9 @@
 :root {
   --highlight-color: #e4e550;
-  --primary-color: #2d4659;
-  --secondary-color: #92BBDB;
+  --primary-color: #92BBDB;
+  --secondary-color: #2d4659;
   --tertiary-color: #444949;
+  --background-color: #FAFEFF;
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
 }
 
 h1, .heading {
@@ -23,10 +25,51 @@ h1, .heading {
 
 h2, .subheading {
   font-size: 2rem;
-  font-weight: bold;
   line-height: 3rem;
 }
 
 p {
   line-height: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  /* border: 1px solid magenta; */
+}
+
+header h1 {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  padding-right: .625rem;
+  padding-left: 5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+nav {
+  max-width: 44.75rem;
+  /* border: 1px solid magenta; */
+  margin-right: 5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  /* border: 1px solid magenta; */
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  /* border: 1px solid magenta; */
+  padding: .2rem 1rem;
+  margin: 0 .4rem;
+  border-bottom: solid .2rem var(--primary-color);
+}
+
+nav a:hover {
+  color: var(--highlight-color);
+  border-bottom: solid .2rem var(--highlight-color);
 }
