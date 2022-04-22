@@ -1,0 +1,10 @@
+:root {
+  --highlight-color: #e4e550;
+  --primary-color: #2d4659;
+  --secondary-color: #92BBDB;
+  --tertiary-color: #444949;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
