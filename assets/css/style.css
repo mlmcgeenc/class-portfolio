@@ -73,3 +73,18 @@ nav a:hover {
   color: var(--highlight-color);
   border-bottom: solid .2rem var(--highlight-color);
 }
+
+.hero {
+  background-image: url("../images/log-with-moss.jpeg");
+  height: 18rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.portrait {
+  max-height: 15.5rem;
+  margin: 1.25rem 5.4rem 1.25rem 1.25rem;
+  float: right;
+  border-radius: 50%;
+  border: solid .5rem var(--tertiary-color);
+}
