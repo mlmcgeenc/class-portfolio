@@ -96,8 +96,6 @@ article {
   margin: auto;
   max-width: 90rem;
   padding-top: 2rem;
-  
-  ;
 }
 
 .article-heading {
@@ -161,4 +159,22 @@ article {
 
 .project-card:hover .overlay {
   background: rgba(0, 0, 0, .0);
+}
+
+.contact-links {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  border-bottom: solid .2rem var(--secondary-color);
+  padding: .2rem;
+}
+
+.contact-links a:hover {
+  color: var(--highlight-color);
+  border-bottom: solid .2rem var(--highlight-color);
 }
