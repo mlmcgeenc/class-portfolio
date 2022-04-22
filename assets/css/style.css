@@ -161,6 +161,9 @@ article {
   background: rgba(0, 0, 0, .0);
 }
 
+#contact-me {
+  padding-bottom: 2rem;
+}
 .contact-links {
   justify-content: space-around;
   align-items: center;
