@@ -5,6 +5,28 @@
   --tertiary-color: #444949;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, .heading {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+}
+
+h2, .subheading {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+p {
+  line-height: 1.5rem;
 }
