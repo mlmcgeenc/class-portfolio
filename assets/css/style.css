@@ -1,3 +1,4 @@
+/* ========== CSS Variables ========== */
 :root {
   --background-color: #FAFEFF;
   --highlight-color: #e4e550;
@@ -6,6 +7,7 @@
   --tertiary-color: #444949;
 }
 
+/* ========== Page Styles ========== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +17,10 @@
 body {
   background-color: var(--background-color);
   font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  padding: 0 5rem;
 }
 
 .container {
@@ -38,6 +44,7 @@ p {
   line-height: 1.5rem;
 }
 
+/* ========== Header ========== */
 header {
   align-items: center;
   background-color: var(--tertiary-color);
@@ -54,9 +61,9 @@ header h1 {
 }
 
 nav ul {
-  margin: 0 5rem;
   display: flex;
   list-style: none;
+  margin: 0 5rem;
 }
 
 nav a {
@@ -70,8 +77,10 @@ nav a {
 nav a:hover {
   border-bottom: solid .2rem var(--highlight-color);
   color: var(--highlight-color);
+  transition: .3s;
 }
 
+/* ========== Hero ========== */
 .hero {
   background-image: url("../images/log-with-moss.jpeg");
   background-position: center;
@@ -81,12 +90,17 @@ nav a:hover {
 
 .portrait {
   border-radius: 50%;
-  border: solid .5rem var(--tertiary-color);
   float: right;
   margin: 1.25rem 5.4rem 1.25rem 1.25rem;
   max-height: 15.5rem;
+  
+  box-shadow:
+    0 0 0 4px hsl(180, 4%, 28%),
+    0 0 0 5px hsl(60, 74%, 61%),
+    0 0 0 9px hsl(180, 4%, 28%);
 }
 
+/* ========== Main Content ========== */
 article {
   display: flex;
   margin: auto;
@@ -104,7 +118,7 @@ article {
 
 .article-content {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   flex: 1 1 80%;
   justify-content: space-between;
   padding: 0 0 0 3rem;
@@ -123,14 +137,15 @@ article {
   position: relative;
 }
 
-.project-card:last-child {
+.project-card:first-child {
+  flex: 1 0 95%;
   height: 32.5rem;
 }
 
 .project-tag {
   background-color: var(--primary-color);
   bottom: 1rem;
-  padding: 1rem;
+  padding: .5rem 1rem;
   position: absolute;
   z-index: 2;
 }
@@ -147,14 +162,17 @@ article {
 
 .project-card:hover {
   border-color: var(--highlight-color);
+  transition: .3s;
 }
 
 .project-card:hover .project-tag {
   background-color: var(--highlight-color);
+  transition: .3s;
 }
 
 .project-card:hover .overlay {
   background: rgba(0, 0, 0, .0);
+  transition: .3s;
 }
 
 #contact-me {
@@ -162,19 +180,19 @@ article {
 }
 
 .contact-links {
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contact-links a {
-  text-decoration: none;
+  border-bottom: solid .2rem var(--secondary-color);
   color: var(--secondary-color);
   font-size: 1.5rem;
-  border-bottom: solid .2rem var(--secondary-color);
   padding: .2rem;
+  text-decoration: none;
 }
 
 .contact-links a:hover {
-  color: var(--highlight-color);
   border-bottom: solid .2rem var(--highlight-color);
+  color: var(--highlight-color);
 }
