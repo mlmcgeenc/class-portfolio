@@ -101,7 +101,7 @@ article {
 .article-heading {
   border-right: solid .2rem var(--secondary-color);
   color: var(--secondary-color);
-  flex: 1 0 20%;
+  flex: 1 0 18rem;
   padding-right: 1rem;
   text-align: right;
 }
