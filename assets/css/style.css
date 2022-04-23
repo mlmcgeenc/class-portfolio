@@ -53,12 +53,8 @@ header h1 {
   padding-right: .625rem;
 }
 
-nav {
-  margin-right: 5rem;
-  max-width: 44.75rem;
-}
-
 nav ul {
+  margin: 0 5rem;
   display: flex;
   list-style: none;
 }
@@ -109,7 +105,7 @@ article {
 .article-content {
   display: flex;
   flex-wrap: wrap-reverse;
-  flex: 1 0 80%;
+  flex: 1 1 80%;
   justify-content: space-between;
   padding: 0 0 0 3rem;
 }
@@ -164,6 +160,7 @@ article {
 #contact-me {
   padding-bottom: 2rem;
 }
+
 .contact-links {
   justify-content: space-around;
   align-items: center;
