@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/mobile-first.css" />
 	</head>
 
 	<body>
@@ -21,9 +21,9 @@
 		</header>
 
 		<div class="hero">
-			<!-- ! Portrait is using float and should be converted to flex -->
-			<!-- TODO create a container class to limit content to 1440px wide -->
-			<img class="portrait" src="./assets/images/Matt.jpeg" />
+			<div id="portrait">
+				<img src="./assets/images/Matt.jpeg" />
+			</div>
 		</div>
 
 		<main>
@@ -73,8 +73,8 @@
 						class="project-card"
 						style="background-image: url('./assets/images/mountain-behind-lake.jpeg')"
 					>
-						<div class="overlay"></div>
-						<div class="project-tag">
+						<div class="project-card-overlay"></div>
+						<div class="project-info-tag">
 							<h2>Project Title 1</h2>
 							<p>Tech Stack</p>
 						</div>
@@ -85,8 +85,8 @@
 						style="
 							background-image: url('./assets/images/log-with-moss-close.jpeg')"
 					>
-						<div class="overlay"></div>
-						<div class="project-tag">
+						<div class="project-card-overlay"></div>
+						<div class="project-info-tag">
 							<h2>Project Title 2</h2>
 							<p>Tech Stack</p>
 						</div>
@@ -96,8 +96,8 @@
 						class="project-card"
 						style="background-image: url('./assets/images/small-rocks.jpeg')"
 					>
-						<div class="overlay"></div>
-						<div class="project-tag">
+						<div class="project-card-overlay"></div>
+						<div class="project-info-tag">
 							<h2>Project Title 3</h2>
 							<p>Tech Stack</p>
 						</div>
@@ -107,8 +107,8 @@
 						class="project-card"
 						style="background-image: url('./assets/images/large-rocks.jpeg')"
 					>
-						<div class="overlay"></div>
-						<div class="project-tag">
+						<div class="project-card-overlay"></div>
+						<div class="project-info-tag">
 							<h2>Project Title 4</h2>
 							<p>Tech Stack</p>
 						</div>
@@ -118,8 +118,8 @@
 						class="project-card"
 						style="background-image: url('./assets/images/sky-and-pines.jpeg')"
 					>
-						<div class="overlay"></div>
-						<div class="project-tag">
+						<div class="project-card-overlay"></div>
+						<div class="project-info-tag">
 							<h2>Project Title 5</h2>
 							<p>Tech Stack</p>
 						</div>
@@ -129,7 +129,7 @@
 
 			<article id="contact-me">
 				<div class="heading article-heading">Contact Me</div>
-				<div class="article-content contact-links">
+				<div class="article-content contact-links-container">
 					<a href="tel:919-259-5264" id="phone-number">919-259-5264</a>
 					<a href="mailto: mlmcgeenc@gmail.com" id="contact-email-address">mlmcgeenc@gmail.com</a>
 					<a href="https://github.com/mlmcgeenc" id="github-link">GitHub</a>

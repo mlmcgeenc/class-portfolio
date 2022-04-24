@@ -23,10 +23,6 @@ main {
   padding: 0 5rem;
 }
 
-.container {
-  max-width: 90rem;
-}
-
 h1, .heading {
   font-size: 4rem;
   font-weight: bold;
@@ -62,6 +58,7 @@ header h1 {
 
 nav ul {
   display: flex;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0 5rem;
 }
@@ -86,14 +83,21 @@ nav a:hover {
   background-position: center;
   background-size: cover;
   height: 18rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .portrait {
+  flex: 0 1 16rem;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 5rem;
+}
+
+.portrait img {
+  width: 75%;
   border-radius: 50%;
-  float: right;
-  margin: 1.25rem 5.4rem 1.25rem 1.25rem;
-  max-height: 15.5rem;
-  
   box-shadow:
     0 0 0 4px hsl(180, 4%, 28%),
     0 0 0 5px hsl(60, 74%, 61%),
@@ -195,4 +199,77 @@ article {
 .contact-links a:hover {
   border-bottom: solid .2rem var(--highlight-color);
   color: var(--highlight-color);
+}
+
+@media screen and (max-width: 415px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .portrait {
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+
+  .subheading {
+    font-size: .75rem;
+    ;
+  }
+
+  article {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    width: 90%;
+  }
+
+  .article-heading {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: solid .2rem var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 1 1 100%;
+  }
+
+  .article-content {
+    padding: 0;
+    flex: 1 1 100%;
+  }
+
+  .contact-links a {
+    font-size: .5rem;
+  }
 }
